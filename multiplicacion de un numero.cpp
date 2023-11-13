@@ -7,7 +7,7 @@ int main(){
 	cout<<endl;
 	while(true){
 //		declaracion de variables
-		int num = 0, multi = 0;
+		int num = 0, multi = 0, salir;
 //		bucle infinito
 		while(true){
 //			solicitando el valor a multiplicar
@@ -24,6 +24,13 @@ int main(){
 		for(int i =0; i <= 12; i++){
 			multi = num*i;
 			cout<<num;cout<<" x ";cout<<i;cout<<" = ";cout<<multi<<endl;
+		}
+		
+		cout<<endl;
+		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		switch(salir){
+			case 1:system("cls");system("C:\\Users\\4temix\\Desktop\\menu\\menu.exe");break;
+			case 2: ;break;
 		}
 	}
 	

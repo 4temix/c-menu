@@ -6,6 +6,7 @@ int main(){
 	cout<<"introduce 3 valores iguales";cout<<endl;
 	cout<<endl;
 	float val1=0,val2=0,val3=0,suma=0,multi=0;
+	int salir;
 	while(true){
 		cout<<"introduce un valor: ";cin>>val1;cout<<endl;
 		cout<<"introduce otro valor: ";cin>>val2;cout<<endl;
@@ -19,6 +20,12 @@ int main(){
 		}else{
 			cout<<"los valores introducidos son diferentes";cout<<endl;
 			system("pause");
+		}
+		cout<<endl;
+		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		switch(salir){
+			case 1:system("cls");system("C:\\Users\\4temix\\Desktop\\menu\\menu.exe");break;
+			case 2: break;
 		}
 	}
 	
