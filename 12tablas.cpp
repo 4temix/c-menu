@@ -5,8 +5,8 @@ int main(){
 	system("title Las 12 tablas de multiplicar");
 //	declaracion de variables
 	int num = 1, salir;
-
-	while(true){
+	bool valid = true;
+	while(valid){
 		cout<<"las 12 tablas de multiplicacion"<<endl;
 		cout<<endl;
 		while(num<=12){
@@ -18,13 +18,13 @@ int main(){
 			}
 			
 			num++;
-			
+			 
 		}
 		
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:system("cls");system("menu");break;
+			case 1:	valid = false;system("cls");system("menu");break;
 			case 2: num = 1; break;
 		}
 	}

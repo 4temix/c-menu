@@ -6,7 +6,8 @@ int main(){
 	system("title Determinar los digitos de un numero");
 	string num2;
 	int salir;
-	while(true){
+	bool valid=true;
+	while(valid){
 		cout<<"introduce un numero entre 0 y 999: ";cin>>num2;cout<<endl;
 		if(num2 == "0"){
 			system("pause");
@@ -23,7 +24,7 @@ int main(){
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:system("cls");system("menu");break;
+			case 1:valid = false;system("cls");system("menu");break;
 			case 2: break;
 		}
 	}

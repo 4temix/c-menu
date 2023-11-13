@@ -7,7 +7,8 @@ int main(){
 	cout<<endl;
 	float val1=0,val2=0,val3=0,suma=0,multi=0;
 	int salir;
-	while(true){
+	bool valid = true;
+	while(valid){
 		cout<<"introduce un valor: ";cin>>val1;cout<<endl;
 		cout<<"introduce otro valor: ";cin>>val2;cout<<endl;
 		cout<<"introduce un ultimo valor: ";cin>>val3;cout<<endl;
@@ -24,7 +25,7 @@ int main(){
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:system("cls");system("menu");break;
+			case 1:	valid = false;system("cls");system("menu");break;
 			case 2: break;
 		}
 	}

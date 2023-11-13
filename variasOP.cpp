@@ -6,7 +6,8 @@ int main (){
 	m=0, por=0;
 	int a, salir;
 	int e;
-	while(true){
+	bool valid = true;
+	while(valid){
 		cout <<"entre 1 valor:";
 		cin >> a; cout <<endl;
 		cout<< "entre valor 2:";
@@ -27,8 +28,8 @@ int main (){
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:system("cls");system("menu");break;
-			case 2: ;break;
+			case 1: valid = false;system("cls");system("menu");break;
+			case 2: break;
 		}
 	}
 

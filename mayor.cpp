@@ -6,7 +6,8 @@ int main(){
 	float val1=0, val2=0, val3=0, mayor=0, medio=0, menor=0;
 	int salir;
 		bool confirm = true;
-	while(true){
+		bool valid = true;
+	while(valid){
 		do{
 			cout<<"introduce el primer numero: ";
 			cin>> val1;cout<<endl;
@@ -65,7 +66,7 @@ int main(){
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:system("cls");system("menu");break;
+			case 1:valid = false;system("cls");system("menu");break;
 			case 2: ;break;
 		}
 	}
