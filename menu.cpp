@@ -33,17 +33,24 @@ int main(){
 	cout<<endl;
 	cout<<"a donde quieres ir?: ";cin>>num;
 	switch(num){
-		case 1:system("cls");system("C:\\Users\\4temix\\Desktop\\menu\\notas.exe");break;
-		case 2:system("cls");system("");break;
-		case 3:system("cls");system("");break;
-		case 4:system("cls");system("");break;
-		case 5:system("cls");system("");break;
-		case 6:system("cls");system("");break;
-		case 7:system("cls");system("");break;
-		case 8:system("cls");system("");break;
-		case 9:system("cls");system("");break;
-		case 10:system("cls");system("");break;
-		case 11:system("exit"); break;
+		case 1:system("cls");system("pares");break;
+		case 2:system("cls");system("impares");break;
+		case 3:system("cls");system("mayor");break;
+		case 4:system("cls");system("multi");break;
+		case 5:system("cls");system("variasOP");break;
+		case 6:system("cls");system("12tablas");break;
+		case 7:system("cls");system("notas");break;
+		case 8:system("cls");system("multi8");break;
+		case 9:system("cls");system("iguales");break;
+		case 10:system("cls");system("digitos");break;
+		case 11:system("cls");system("cerrar");break;
 		default:cout<<"no existe";
 	}
+	
+	if(num == 11){
+		return 0;
+		exit(0);
+	}
+	return 0;
+	getch();
 }
