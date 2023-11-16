@@ -32,7 +32,7 @@ int main(){
 		cout<<endl;
 		cout<<"		[11] numeros hasta que digite el 0, determinar y mostrar el numero de valores mayores a 0\n";
 		cout<<endl;
-		cout<<"		[12] numeros hasta que digite el 0, determinar y mostrar el numero de valores mayores a 0\n";
+		cout<<"		[12] introducir tres numeros impares, sumarlos y encontrar la raiz\n";
 		cout<<endl;
 		cout<<"							[13] salir\n";
 		cout<<endl;
