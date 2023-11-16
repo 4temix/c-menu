@@ -2,9 +2,15 @@
 #include <conio.h>
 using namespace std;
 int main (){
+<<<<<<< HEAD
 	int s=0, r=0, d=0,
 	m=0, por=0;
 	int a,e, salir;
+=======
+	system("title operaciones basicas");
+	int s=0, r=0, d=0,
+	m=0, por=0 ,a, e, salir;
+>>>>>>> 5ec64bcf41316f8daa7fc461aadab24bbe2ecdf2
 	bool valid = true;
 	while(valid){
 		cout <<"entre 1 valor:";
