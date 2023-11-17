@@ -15,7 +15,7 @@ int main() {
 				num--;
 			}
 		}
-		cout<<"el total es: "<<total;
+		cout<<"el total es: "<<total;cout<<endl;
 		system("pause");
 		cout<<endl;
 		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;

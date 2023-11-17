@@ -18,7 +18,7 @@ int main(){
 			cout<<"introduce la nota del alumno: ";cin>>nota;
 	//		validando los valores ya solicitados
 			if(nota>=70){
-				cout<<"el alumno ";cout<<nombre;cout<<" tiene una nota mayor oigual a 70, siendo esta: ";cout<<nota;cout<<endl;
+				cout<<"el alumno ";cout<<nombre;cout<<" tiene una nota mayor o igual a 70, siendo esta: ";cout<<nota;cout<<endl;
 			}else{
 				cout<<"el alumno ";cout<<nombre;cout<<" tiene una nota menor a 70, siendo esta: ";cout<<nota;cout<<endl;
 			}

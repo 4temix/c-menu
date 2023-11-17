@@ -21,17 +21,17 @@ int main(){
 				if(val1>val3){
 	//				esto ocurrira en caso de que cumpla la validacion del 1 y el 3
 					if(val2>val3){
-					
-					cout<<"valor mayor: "<<val1;cout<<endl;
-					cout<<"valor del medio: "<<val2;cout<<endl;
-					cout<<"valor menor: "<<val3;cout<<endl;
-					confirm = false;
+						
+						cout<<"valor mayor: "<<val1;cout<<endl;
+						cout<<"valor del medio: "<<val2;cout<<endl;
+						cout<<"valor menor: "<<val3;cout<<endl;
+						confirm = false;
 					}else{
 						
-					cout<<"valor mayor: "<<val3;cout<<endl;
-					cout<<"valor del medio: "<<val1;cout<<endl;
-					cout<<"valor menor: "<<val2;cout<<endl;
-					confirm = false;
+						cout<<"valor mayor: "<<val1;cout<<endl;
+						cout<<"valor del medio: "<<val3;cout<<endl;
+						cout<<"valor menor: "<<val2;cout<<endl;
+						confirm = false;
 					}
 				}else{
 					
