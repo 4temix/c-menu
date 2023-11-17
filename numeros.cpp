@@ -34,7 +34,7 @@ int main (){
 		}
 //		validacion para continuar o salir al menu
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
 			case 1: valid2 = false;system("cls");system("menu");break;
 			case 2: ;break;

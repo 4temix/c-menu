@@ -34,7 +34,9 @@ int main(){
 		cout<<endl;
 		cout<<"		[12] introducir tres numeros impares, sumarlos y encontrar la raiz\n";
 		cout<<endl;
-		cout<<"							[13] salir\n";
+		cout<<"		[13] factorial de un numero\n";
+		cout<<endl;
+		cout<<"							[0] salir\n";
 		cout<<endl;
 		cout<<"a donde quieres ir?: ";cin>>num;
 		
@@ -51,7 +53,8 @@ int main(){
 			case 10:valid = false;system("cls");system("digitos");break;
 			case 11:valid = false;system("cls");system("numeros");break;
 			case 12:valid = false;system("cls");system("tresImpares");break;
-			case 13:valid = false;system("cls");system("cerrar");break;
+			case 13:valid = false;system("cls");system("factorial");break;
+			case 0 :valid = false;system("cls");system("cerrar");break;
 			default:cout<<"no existen"<<endl;system("pause"); system("cls");
 		}
 	}

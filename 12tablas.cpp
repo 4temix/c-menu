@@ -22,7 +22,7 @@ int main(){
 		}
 		
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		cout<<"precione [1] para salir al menu, precione [2]  o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
 			case 1:	valid = false;system("cls");system("menu");break;
 			case 2: num = 1; break;
