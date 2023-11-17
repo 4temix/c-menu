@@ -1,7 +1,7 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
-int factorial(int facto);
+unsigned long long factorial(int facto);
 
 int main(){
 	system("title el factorial de un numero");
@@ -21,14 +21,13 @@ int main(){
 
 }
 
-int factorial(int facto){ 
-	double acum = 1;
+unsigned long long factorial(int facto){ 
+	unsigned long long acum = 1;
 //	igualo el valor de "i" a lo que hay en la variable "facto" y le digo que si es diferente de 0 le reste 1 a "i"
 	for(int i=facto; !i == 0; i--){
 		/*lo que esta en la variable "acum" se va a multiplicar por el valor de i, luego ese valor se va a quedar guardado
 		en la variable acum*/
 		acum *=i;
-		cout<<"acum vale "<<acum<<endl;
 	}
 	
 	return acum;
