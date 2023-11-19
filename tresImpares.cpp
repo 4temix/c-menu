@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <math.h>
+#define name cout<<"by 4temix";	
 using namespace std;
 double raiz(int r,int x, int y);
 int main(){

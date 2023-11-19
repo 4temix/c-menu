@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
+#define name cout<<"by 4temix";	
 using namespace std;
 int main(){
 	system("title Menu de opciones");

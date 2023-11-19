@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#define name cout<<"by 4temix";	
 using namespace std;
 int main(){
 	system("title Notas de alumnos");

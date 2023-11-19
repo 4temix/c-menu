@@ -2,6 +2,7 @@
 #include <conio.h>
 //libreria para poder agregar elementos a un vector/arreglo
 #include <vector>
+#define name cout<<"by 4temix";	
 using namespace std;
 int main (){
 	bool valid2 = true;

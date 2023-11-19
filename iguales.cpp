@@ -1,8 +1,12 @@
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
+#define  color SetConsoleTextAttribute
+#define name cout<<"by 4temix";	
 using namespace std;
 int main(){
 	system("title tres numeros iguales");
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	cout<<"introduce 3 valores iguales";cout<<endl;
 	cout<<endl;
 	float val1=0,val2=0,val3=0,suma=0,multi=0;
@@ -17,15 +21,14 @@ int main(){
 			multi = suma*val3;
 			cout<<"esta es la suma del valor 1 y 2: ";cout<<suma;cout<<endl;
 			cout<<"esta es la multiplicacion del resultado de la suma y el valor 3: ";cout<<multi;cout<<endl;
-			system("pause");
 		}else{
 			cout<<"los valores introducidos son diferentes";cout<<endl;
-			system("pause");
 		}
+		system("pause");
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:	valid = false;system("cls");system("menu");break;
+			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;
 		}
 	}

@@ -1,23 +1,30 @@
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
+#define  color SetConsoleTextAttribute
+#define name cout<<"by 4temix";	
 using namespace std;
 unsigned long long factorial(int facto);
 
 int main(){
 	system("title el factorial de un numero");
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	bool valid = true;
 	while(valid){
 		int num,salir;
 		cout<<"introduce un numero para encontrar su factorial: ";cin>>num;cout<<endl;
-		cout<<"el factorial de "<<num<<" es "<<factorial(num);
+		cout<<"el factorial de ";color(hConsole,4);cout<<num;color(hConsole,7);cout<<" es ";color(hConsole,2);cout<<factorial(num)<<endl;color(hConsole,7);
 		
+		system("pause");
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2]  o cualquier otro numero para continuar en el programa ";cin>>salir;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:	valid = false;system("cls");system("menu");break;
-			case 2: num = 1; break;
+			case 1: valid = false;system("cls");system("menu");break;
+			case 2: break;
 		}
 	}
+	
+	getch();
 
 }
 

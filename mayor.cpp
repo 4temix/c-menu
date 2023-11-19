@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#define name cout<<"by 4temix";	
 using namespace std;
 
 int main(){
@@ -15,6 +16,36 @@ int main(){
 			cin>> val2;cout<<endl;
 			cout<<"introduce un tercer numero: ";
 			cin>> val3;cout<<endl;
+	
+			if(val1 == val2 && val2 == val3){
+				cout<<"todos los valores introducidos son iguales"<<endl;
+				break;
+			}else if(val1 == val2 && val2 > val3){						
+				cout<<"el primer valor y el segundo son iguales: "<<val1;cout<<endl;
+				cout<<"valor menor: "<<val3;cout<<endl;
+				break;
+			}else if(val1 == val2 && val2 < val3){
+				cout<<"valor mayor: "<<val3;cout<<endl;
+				cout<<"el primer valor y el segundo son iguales: "<<val1;cout<<endl;
+				break;
+			}else if(val1 == val3 && val3 > val2){						
+				cout<<"el primer valor y el tercero son iguales: "<<val1;cout<<endl;
+				cout<<"valor menor: "<<val2;cout<<endl;
+				break;
+			}else if(val1 == val3 && val3 < val2){						
+				cout<<"valor mayor: "<<val2;cout<<endl;
+				cout<<"el primer valor y el tercero son iguales:  "<<val1;cout<<endl;
+				break;
+			}else if(val2 == val3 && val3 < val1){						
+				cout<<"valor mayor: "<<val1;cout<<endl;
+				cout<<"el segundo valor y el tercero son iguales:  "<<val2;cout<<endl;
+				break;
+			}else if(val2 == val3 && val3 > val1){						
+				cout<<"el segundo valor y el tercero son iguales: "<<val2;cout<<endl;
+				cout<<"valor menor: "<<val1;cout<<endl;
+				break;
+			}
+				
 	//		comparacion del valor 1 y el valor 2
 			if(val1>val2){
 	//			esto ocurrira en caso de que cumpla la validacion del 1 y el 2
