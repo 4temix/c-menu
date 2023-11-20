@@ -1,16 +1,11 @@
 #include <iostream>
 #include <conio.h>
+#define name cout<<"by 4temix";	
 using namespace std;
 int main (){
-<<<<<<< HEAD
-	int s=0, r=0, d=0,
-	m=0, por=0;
-	int a,e, salir;
-=======
 	system("title operaciones basicas");
 	int s=0, r=0, d=0,
 	m=0, por=0 ,a, e, salir;
->>>>>>> 5ec64bcf41316f8daa7fc461aadab24bbe2ecdf2
 	bool valid = true;
 	while(valid){
 		cout <<"entre 1 valor:";
@@ -31,7 +26,7 @@ int main (){
 		cout <<"el porsentaje es:"<< por,cout<<endl;
 		system("pause");
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
 			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;

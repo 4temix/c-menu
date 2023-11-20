@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <vector>
 #include <string>
+#define name cout<<"by 4temix";	
 using namespace std;
 int main(){
 	system("title Notas de alumnos");
@@ -38,7 +39,7 @@ int main(){
 		}
 		
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
 			case 1:	valid = false;system("cls");system("menu");break;
 			case 2: contador = 1 ;break;

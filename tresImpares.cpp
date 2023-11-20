@@ -1,11 +1,15 @@
 #include <iostream>
 #include <conio.h>
 #include <math.h>
+#include <windows.h>
+#define  color SetConsoleTextAttribute
+#define name cout<<"by 4temix";	
 using namespace std;
 double raiz(int r,int x, int y);
 int main(){
 	bool valid = true;
 	int salir;
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	while(valid){
 		cout<<endl;
 		int a,b,c;
@@ -32,10 +36,11 @@ int main(){
 		}
 		cout<<" la raiz cuadrada es: "<<raiz(a,b,c);
 		
+		system("pause");
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] para continuar en el programa ";cin>>salir;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
-			case 1:	valid = false;system("cls");system("menu");break;
+			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;
 		}
 	}
