@@ -5,7 +5,7 @@
 #define  color SetConsoleTextAttribute
 #define name cout<<"by 4temix";	
 using namespace std;
-double raiz(int r,int x, int y);
+double raiz(int,int, int);
 int main(){
 	bool valid = true;
 	int salir;
@@ -34,7 +34,7 @@ int main(){
 			system("cls");
 			continue;
 		}
-		cout<<" la raiz cuadrada es: "<<raiz(a,b,c);
+		cout<<" la raiz cuadrada es: "<<raiz(a,b,c)<<endl;
 		
 		system("pause");
 		cout<<endl;
