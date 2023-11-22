@@ -5,7 +5,7 @@
 #define name cout<<"by 4temix";	
 using namespace std;
 
-long afp(long);
+double afp(double);
 
 int main(){
 	system("title AFP");
@@ -15,15 +15,15 @@ int main(){
 	int salir;
 	while(valid){
 		cout<<endl;
-		long sueldo;
+		double sueldo;
 		cout<<"introduce un sueldo para calcula el AFP: ";cin>>sueldo;cout<<endl;
 		if(sueldo < 16262){
 			cout<<"exento"<<endl;
 		}else if(sueldo > 325250){
 			sueldo = 325250;
-			color(hConsole,3);cout<<"el AFP es: ";color(hConsole,2);cout<<afp(sueldo)<<endl;color(hConsole,7);
+			color(hConsole,3);cout<<"el AFP es RD$: ";color(hConsole,2);cout<<afp(sueldo)<<endl;color(hConsole,7);
 		}else{
-			color(hConsole,3);cout<<"el AFP es: ";color(hConsole,2);cout<<afp(sueldo)<<endl;color(hConsole,7);
+			color(hConsole,3);cout<<"el AFP es RD$: ";color(hConsole,2);cout<<afp(sueldo)<<endl;color(hConsole,7);
 		}
 		
 		system("pause");
@@ -37,7 +37,7 @@ int main(){
 
 }
 
-long afp(long AFP){
-	AFP = (AFP*0.287);
+double afp(double AFP){
+	AFP = (AFP*0.0287);
 	return AFP;
 }
