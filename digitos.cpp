@@ -4,6 +4,7 @@
 #include <windows.h>
 #define  color SetConsoleTextAttribute
 #define name cout<<"by 4temix";	
+#include <string>
 using namespace std;
 int main(){
 	system("title Determinar los digitos de un numero");

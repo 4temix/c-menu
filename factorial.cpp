@@ -4,7 +4,7 @@
 #define  color SetConsoleTextAttribute
 #define name cout<<"by 4temix";	
 using namespace std;
-unsigned long long factorial(int facto);
+unsigned long long factorial(int);
 
 int main(){
 	system("title el factorial de un numero");
