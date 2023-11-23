@@ -10,7 +10,9 @@ int main (){
 	bool valid = true;
 	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	while(valid){
+		cout<<"el numero "<<515<<" no es par pero debe estar"<<endl;
 		impar();
+		cout<<"el numero "<<5<<" no es par pero debe estar"<<endl;
 		system("pause");
 		cout<<endl;
 		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
@@ -28,9 +30,9 @@ int main (){
 void impar(){
 	for(int i=515;i >= 5; i--){
 			if(i % 2==0){
-				continue;
+				cout<<"el numero "<<i<<" es par"<<endl;
 			}else{
-				cout<<"el numero "<<i<<" es impar"<<endl;
+				continue;
 			}
 	}
 }

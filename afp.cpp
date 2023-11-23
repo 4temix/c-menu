@@ -34,7 +34,7 @@ int main(){
 			case 2: break;
 		}
 	}
-
+	getch();
 }
 
 double afp(double AFP){

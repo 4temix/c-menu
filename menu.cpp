@@ -39,9 +39,11 @@ int main(){
 		cout<<endl;
 		cout<<"		[";color(hConsole,4);cout<<"13";color(hConsole,7);cout<<"] factorial de un numero\n";
 		cout<<endl;
-		cout<<"		[";color(hConsole,4);cout<<"14";color(hConsole,7);cout<<"] numerps impares entre 5 y 515\n";
+		cout<<"		[";color(hConsole,4);cout<<"14";color(hConsole,7);cout<<"] numeros pares entre 5 y 515\n";
 		cout<<endl;
 		cout<<"		[";color(hConsole,4);cout<<"15";color(hConsole,7);cout<<"] calcular el AFP\n";
+		cout<<endl;
+		cout<<"		[";color(hConsole,4);cout<<"16";color(hConsole,7);cout<<"] calcular el ISR\n";
 		cout<<endl;
 		cout<<"							[";color(hConsole,4);cout<<"0";color(hConsole,7);cout<<"] salir\n";
 		cout<<endl;
@@ -63,6 +65,7 @@ int main(){
 			case 13:valid = false;system("cls");system("factorial");break;
 			case 14:valid = false;system("cls");system("numerosParesEntre5Y515");break;
 			case 15:valid = false;system("cls");system("afp");break;
+			case 16:valid = false;system("cls");system("isr");break;
 			case 0 :valid = false;system("cls");system("cerrar");break;
 			default:cout<<"no existen"<<endl;system("pause"); system("cls");
 		}
