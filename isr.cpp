@@ -7,6 +7,7 @@ using namespace std;
 void isr(long, long double, long double, long double&, double);
 
 int main(){
+	system("title Impuesto sobre la renta");
 	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	cout<<"		 			Calculadora del impuesto sobre la renta"<<endl<<endl;
 	long double val= 0, AFP = 0,SFS = 0,ISR = 0, total;
@@ -21,7 +22,7 @@ int main(){
 		isr(val,SFS,AFP,ISR,total);
 		system("pause");
 		cout<<endl;
-		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";color(hConsole,4);cin>>salir;color(hConsole,7);
 		switch(salir){
 			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;

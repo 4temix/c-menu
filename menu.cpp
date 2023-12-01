@@ -45,9 +45,11 @@ int main(){
 		cout<<endl;
 		cout<<"		[";color(hConsole,4);cout<<"16";color(hConsole,7);cout<<"] calcular el ISR\n";
 		cout<<endl;
+		cout<<"		[";color(hConsole,4);cout<<"17";color(hConsole,7);cout<<"] calcular el seguro social\n";
+		cout<<endl;
 		cout<<"							[";color(hConsole,4);cout<<"0";color(hConsole,7);cout<<"] salir\n";
 		cout<<endl;
-		cout<<"a donde quieres ir?: ";cin>>num;
+		cout<<"a donde quieres ir?: ";;color(hConsole,4);cin>>num;color(hConsole,7);
 		
 		switch(num){
 			case 1:valid = false; system("cls");system("pares");break;
@@ -66,6 +68,7 @@ int main(){
 			case 14:valid = false;system("cls");system("numerosParesEntre5Y515");break;
 			case 15:valid = false;system("cls");system("afp");break;
 			case 16:valid = false;system("cls");system("isr");break;
+			case 17:valid = false;system("cls");system("sfs");break;
 			case 0 :valid = false;system("cls");system("cerrar");break;
 			default:cout<<"no existen"<<endl;system("pause"); system("cls");
 		}

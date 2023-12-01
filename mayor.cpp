@@ -90,13 +90,13 @@ int main(){
 			}
 			confirm = false;
 		}while(confirm == true);
-			system("pause");		
-			cout<<endl;
-			cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
-			switch(salir){
-				case 1: valid = false;system("cls");system("menu");break;
-				case 2: break;
-			}
+		system("pause");
+		cout<<endl;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";color(hConsole,4);cin>>salir;color(hConsole,7);
+		switch(salir){
+			case 1: valid = false;system("cls");system("menu");break;
+			case 2: break;
+		}
 	}
 
 	

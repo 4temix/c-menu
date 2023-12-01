@@ -1,9 +1,12 @@
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
+#define  color SetConsoleTextAttribute
 #define name cout<<"by 4temix";	
 using namespace std;
 int main (){
 	system("title operaciones basicas");
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 	int s=0, r=0, d=0,
 	m=0, por=0 ,a, e, salir;
 	bool valid = true;
@@ -26,7 +29,7 @@ int main (){
 		cout <<"el porsentaje es:"<< por,cout<<endl;
 		system("pause");
 		cout<<endl;
-		cout<<"precione [1] para salir al menu, precione [2] o cualquier otro numero para continuar en el programa ";cin>>salir;
+		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";color(hConsole,4);cin>>salir;color(hConsole,7);
 		switch(salir){
 			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;
