@@ -25,7 +25,7 @@ int main() {
 
 		system("pause");
 		cout<<endl;
-		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";color(hConsole,4);cin>>salir;color(hConsole,7);
+		cout<<"pres4ione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, presione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";color(hConsole,4);cin>>salir;color(hConsole,7);
 		switch(salir){
 			case 1: valid = false;system("cls");system("menu");break;
 			case 2: num = 1; break;

@@ -20,7 +20,7 @@ int main (){
 		cout<<"el valor mensual a pagar es : ";color(hConsole,2);cout<<total;color (hConsole,7);cout<<endl;
 		system("pause");
 		cout<<endl;
-		cout<<"precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
+		cout<<"presione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir al menu, presione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] o cualquier otro numero para continuar en el programa ";cin>>salir;
 		switch(salir){
 			case 1: valid = false;system("cls");system("menu");break;
 			case 2: break;

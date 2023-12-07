@@ -14,7 +14,7 @@ int main(){
 	while(valid){
 		cout<<endl;
 		color(hConsole,3);cout<<"						seguro que quieres salir?"<<endl;color(hConsole,7);
-		cout<<"			 	precione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir, precione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] para regresar al menu ";cin>>salir;
+		cout<<"			 	presione [";color(hConsole,4);cout<<"1";color (hConsole,7);cout<<"] para salir, presione [";color(hConsole,4);cout<<"2";color (hConsole,7);cout<<"] para regresar al menu ";cin>>salir;
 		switch(salir){
 			case 1:valid = false;system("cls");cout<<"hasta la proxima";system("exit");break;
 			case 2:valid = false;system("cls");system("menu");break;
