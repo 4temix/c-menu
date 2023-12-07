@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
+#include <iomanip>
 #define color SetConsoleTextAttribute
 #define name cout<<"by 4temix";
 using namespace std;
@@ -47,7 +48,7 @@ void isr(long val, long double SFS, long double AFP, long double& IRS, double to
 		cout<<"Tasa: 15% del excedente de RD$416,220.01 "<<endl;
 		cout<<"valor anual a retener RD$: ";color(hConsole,2);cout<<porsent<<endl;color(hConsole,7);
 		total = porsent/12;
-		cout<<"valor mensual a retener RD$: ";color(hConsole,2);cout<<total<<endl;color(hConsole,7);
+		cout<<"valor mensual a retener RD$: ";color(hConsole,2);cout<<setprecision(5)<<total<<endl;color(hConsole,7);
 	}else if(cotizable > 624329 && cotizable < 867123){
 		
 		cotizable = cotizable-624329;
